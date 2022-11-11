@@ -1,0 +1,25 @@
+int num1,num2,todo,out;
+Scanner sc= new Scanner(System.in);
+
+System.out.println("Enter Number 1:");
+num1=sc.nextint();
+System.out.println("Enter Number 2:");
+num2=sc.nextint();
+System.out.println("1-->Addition || 2-->Subtraction || 3-->Multiplication || 4-->Division");
+todo=sc.nextint();
+
+if (todo==1)
+  out=num1 + num2;
+else if (todo==3)
+  out=num1*num2;
+else if (todo==4)
+  out=num1/num2;
+else if (todo==2)
+   if (num2<num1)
+      out=num1-num2;
+   else if (num2>num1)
+      out=num2-num1;
+else
+   System.out.println("Enter a correct value");
+
+System.out.println(Integer.toString(out));
